@@ -59,7 +59,7 @@ const Layout = ({ location, title, children }) => {
   const header = (
     <>
       {toggle}
-      <h2
+      <h3
         style={{
           ...scale(1),
           marginBottom: 0,
@@ -76,7 +76,7 @@ const Layout = ({ location, title, children }) => {
         >
           {title}
         </Link>
-      </h2>
+      </h3>
     </>
   )
 

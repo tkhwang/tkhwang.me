@@ -1,15 +1,15 @@
 module.exports = {
-  pathPrefix: "/leonids",
+  pathPrefix: "/",
   siteMetadata: {
-    title: `Leonids`,
+    title: `tkhwang.me`,
     author: {
-      name: `@ry_zou`,
-      summary: `web dev`,
+      name: `@tkhwang`,
+      summary: ` 🌱 I want to DEVELOP something FUN and USEFUL.`,
     },
-    description: `A simple, fixed sidebar two columns Gatsby.js blog starter.`,
-    siteUrl: `https://renyuanz.github.io/leonids`,
+    description: `rtfm().then((data) => practice(data)).then((knowledge) => develop(knowledge))`,
+    siteUrl: `https://tkhwang.me`,
     social: {
-      twitter: `ry_zou`,
+      twitter: `tkhwang`,
     },
     defaultImage: "images/bg.jpeg",
   },
@@ -83,5 +83,14 @@ module.exports = {
     `gatsby-plugin-offline`,
     "gatsby-plugin-dark-mode",
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          'Do Hyeon',
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ]
+      }
+    },
   ],
 }
