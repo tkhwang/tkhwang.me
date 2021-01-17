@@ -8,19 +8,19 @@ image:
   feature: https://raw.githubusercontent.com/tkhwang/tkhwang-etc/master/img/2020/04/photo-1556075798-4825dfaaf498.jpeg
 ---
 
-![feature image](https://raw.githubusercontent.com/tkhwang/tkhwang-etc/master/img/2020/04/photo-1556075798-4825dfaaf498.jpeg)
-
 Medium 에서 좋은 글  [Six Rules for Good Git Hygiene](https://medium.com/better-programming/six-rules-for-good-git-hygiene-5006cf9e9e2)이 있어서 내용을 간단하게 정리해본다.
+
+![feature image](https://raw.githubusercontent.com/tkhwang/tkhwang-etc/master/img/2020/04/photo-1556075798-4825dfaaf498.jpeg)
 
 ### 항상 Push 하기 전에는 pull 할 것
 
 이것은 매우 근본적인 규칙이다. 레포지토리에 코드를 push 하기 전에는 항상 리모트 레포지토리의 모든 현재 변경을 모두 로컬 머신에 pull 해야 한다. 그렇게 하는 것이 로컬 카피가 리모트 레포지토리와 sync가 맞는 것을 보장할 수 있다. 다른 사람들이 리모트 copy에 계속 push를 해왔기 때문에 sync 하지 않고 만약 Push를 한다면 결국 multiple heads 혹은 push 할 때 merge conflict 이 발생할 것이라는 명심하라.
 
-###### Pull 은 자주 할 것
+#### Pull 은 자주 할 것
 
 많은 팀원들이 작업할 때 중앙 레포지토리는 꾸준히 변경이 된다. 가능하면 로컬 머신을 리모트 레포지토리와 변경 사항이 적도록 유지해야한다. 이를 위한 방법은 리모트 서버의 모든 변경 사항을 로컬 copy 에 pull 하는 것이다. 이 작업은 당신이 원하는 만큼 자주 수행할 수 있고 그래야만 한다. 적어도 하루에 한 번은 해야 합니다.
 
-###### Push 는 가끔 할 것
+#### Push 는 가끔 할 것
 
 당신이 push 하게 되면 당신의 당신의 변경 사항을 남들에게 안겨주게 됩니다. 이는 당신이 빌드를 깨지 않을 것을 알때. 당신이 push하고 있는 것이 무엇인지 잘 리뷰했을 때. 당신의 로컬 코드가 다른 사람에게 유용하게 될 상태라는 것을 느낄때에만 push 해야 합니다.
 
@@ -32,7 +32,7 @@ Medium 에서 좋은 글  [Six Rules for Good Git Hygiene](https://medium.com/be
 
 대신에 작고, 하나의 변경 사항을 자주 commit 해야하고, 이 commit 에는 이 작고, 구분된 변화에 대해서 주의깊게 잘 설명하고 있는 commit message를 작성해야 합니다. 쉽게 이해할 수 있는 commit 이 많은 것은 잘못된 것이 아닙니다. 만약 commit message 에 "그리고", "~와 함께" 단어를 사용해야한다고 느낀다면 당신은 아마도 충분히 자주 commit 하지 않고 있는 상황입니다. 작은 commit 은 이해하기 쉬고, 필요한 경우에 revert 하기도 훨씬 쉽습니다.
 
-###### 자주 merge forward 할 것
+#### 자주 merge forward 할 것
 
 당신이 일반적인 git workflow를 사용한다고 가능하면, 당신은 개발 브랜치에 기반을 하고 있는 브랜치에서 대부분의 시간을 보내게 될 것입니다. 당신의 브랜치가 어디에서 땄건 간에 당신은 주기적으로 오리지널 브랜치를 당신 브랜치에 머지해야 한다.
 

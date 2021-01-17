@@ -8,15 +8,16 @@ image:
   feature: https://raw.githubusercontent.com/tkhwang/tkhwang-etc/master/img/2020/04/photo-1521650775848-620150d73160.jpeg
 ---
 
-![feature image](https://raw.githubusercontent.com/tkhwang/tkhwang-etc/master/img/2020/04/photo-1521650775848-620150d73160.jpeg)
 
 요즘 사이드 프로젝트를 하려고 준비중인데 시의적절하게 좋은 글이 있어서 자세하게 읽어보고 싶어서 적어봅니다.
 
 * Original article : [How to Shift From Reading Coding Tutorials to Building Your Own Projects](https://medium.com/better-programming/how-to-shift-from-reading-coding-tutorials-to-building-your-own-projects-a05e3d6e270c)
 
-# 코딩 튜토리얼로부터 자신의 프로젝트 만들어 보기로의 이동
+![feature image](https://raw.githubusercontent.com/tkhwang/tkhwang-etc/master/img/2020/04/photo-1521650775848-620150d73160.jpeg)
 
-#### 코딩에 있어서 당신을 발전시키는 유일한 방법을 직접 코딩을 하는 것이다.
+## 코딩 튜토리얼로부터 자신의 프로젝트 만들어 보기로의 이동
+
+### 코딩에 있어서 당신을 발전시키는 유일한 방법을 직접 코딩을 하는 것이다.
 
 튜토리얼은 배움에 있어서 중요하다 - 특히 무언가를 처음 배우려고 할 때와 기초를 배울때에는 특히 중요하다. 여러분들은 손에 이끌려서 무언가를 만들거나 단계적으로 셋팅하는데 안내를 받는다. 이를 위한 자료는 온라인과 어프라인 모두 매우 많다. 물론 유튜브나 구글은 대부분 사람들이 이용하는 방법이다. 만약 당신이 약간 올드 패션이라면 책을 읽음으로써 배울 수도 있다. 배움에는 많은 다양한 방법들이 있다.
 

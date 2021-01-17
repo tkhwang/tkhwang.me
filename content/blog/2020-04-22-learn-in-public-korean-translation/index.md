@@ -8,10 +8,11 @@ image:
   feature: https://raw.githubusercontent.com/tkhwang/tkhwang-etc/master/img/2020/04/photo-1523240795612-9a054b0db644.jpeg
 ---
 
-![feature image](https://raw.githubusercontent.com/tkhwang/tkhwang-etc/master/img/2020/04/photo-1523240795612-9a054b0db644.jpeg)
 
-* 좋은 글 [Learn In Public: The fastest way to learn](https://www.swyx.io/writing/learn-in-public) 을 알게 되어 자세하게 읽어보고 싶어서 번역을 해봅니다.
-* 참고로 이 분은 react community에서 가장 활발한 활동을 하는 개발자 중의 한 명이라고 합니다.
+좋은 글 [Learn In Public: The fastest way to learn](https://www.swyx.io/writing/learn-in-public) 을 알게 되어 자세하게 읽어보고 싶어서 번역을 해봅니다.
+참고로 이 분은 react community에서 가장 활발한 활동을 하는 개발자 중의 한 명이라고 합니다.
+
+![feature image](https://raw.githubusercontent.com/tkhwang/tkhwang-etc/master/img/2020/04/photo-1523240795612-9a054b0db644.jpeg)
 
 ### 공개적으로 학습하라
 
