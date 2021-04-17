@@ -2,9 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import { scale } from "../utils/typography"
+import Typewriter from "react-simple-typewriter"
 
 import Footer from "./footer"
 import "./global.css"
+import "react-simple-typewriter/dist/index.css"
 
 const Layout = ({ location, title, children }) => {
   const toggle = (
@@ -57,8 +59,28 @@ const Layout = ({ location, title, children }) => {
   )
 
   const header = (
-    <>
+    <div>
       {toggle}
+      <h4
+        style={{ paddingTop: "1rem", margin: "auto 0", fontWeight: "normal" }}
+      >
+        Life is simple{" "}
+        <span style={{ color: "red", fontWeight: "bold" }}>
+          {/* Style will be inherited from the parent element */}
+          <Typewriter
+            loop
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+            words={["Read", "Think", "Code", "Refactor", "Repeat!!!"]}
+            onLoop={loopCount =>
+              console.log(`Just completed loop ${loopCount}`)
+            }
+          />
+        </span>
+      </h4>
       <h3
         style={{
           ...scale(1),
@@ -77,7 +99,7 @@ const Layout = ({ location, title, children }) => {
           {title}
         </Link>
       </h3>
-    </>
+    </div>
   )
 
   return (
