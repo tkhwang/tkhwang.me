@@ -7,6 +7,7 @@ import icon from "astro-icon";
 import fs from "fs";
 import rehypeExternalLinks from "rehype-external-links";
 import remarkUnwrapImages from "remark-unwrap-images";
+import robotsTxt from "astro-robots-txt";
 
 import { expressiveCodeOptions } from "./src/site.config";
 import { remarkReadingTime } from "./src/utils/remark-reading-time";
@@ -24,6 +25,7 @@ export default defineConfig({
 		}),
 		sitemap(),
 		mdx(),
+		robotsTxt(),
 	],
 	markdown: {
 		rehypePlugins: [
