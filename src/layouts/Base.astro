@@ -1,6 +1,7 @@
 ---
 import type { SiteMeta } from "@/types";
 import "@fontsource-variable/noto-sans-kr";
+import { GoogleAnalytics } from "astro-google-analytics";
 
 import BaseHead from "@/components/BaseHead.astro";
 import SkipLink from "@/components/SkipLink.astro";
@@ -21,6 +22,7 @@ const {
 <html lang={siteConfig.lang}>
 	<head>
 		<BaseHead articleDate={articleDate} description={description} ogImage={ogImage} title={title} />
+		<GoogleAnalytics id="G-M8616DP3YZ" />
 	</head>
 	<body>
 		<ThemeProvider />
