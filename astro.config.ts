@@ -7,6 +7,7 @@ import icon from "astro-icon";
 import fs from "fs";
 import rehypeExternalLinks from "rehype-external-links";
 import remarkUnwrapImages from "remark-unwrap-images";
+import partytown from "@astrojs/partytown";
 
 import { expressiveCodeOptions } from "./src/site.config";
 import { remarkReadingTime } from "./src/utils/remark-reading-time";
@@ -24,6 +25,11 @@ export default defineConfig({
 		}),
 		sitemap(),
 		mdx(),
+		partytown({
+			config: {
+				forward: ["dataLayer.push"],
+			},
+		}),
 	],
 	markdown: {
 		rehypePlugins: [
@@ -45,7 +51,7 @@ export default defineConfig({
 	// https://docs.astro.build/en/guides/prefetch/
 	prefetch: true,
 	// ! Please remember to replace the following site property with your own domain
-	site: "https://astro-cactus.chriswilliams.dev/",
+	site: "https://tkhwang.me",
 	vite: {
 		optimizeDeps: {
 			exclude: ["@resvg/resvg-js"],
