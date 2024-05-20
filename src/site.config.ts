@@ -14,7 +14,8 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	// Meta property used as the default description meta property
-	description: "An opinionated starter theme for Astro",
+	description:
+		"This is my little thoughts 🤔 and journey 💻 into software development | tkhwang.me",
 	// HTML lang property, found in src/layouts/Base.astro L:18
 	lang: "ko-KR",
 	// Meta property, found in src/components/BaseHead.astro L:42
