@@ -51,7 +51,7 @@ export default {
 			fontFamily: {
 				// Add any custom fonts here
 				sans: ["Noto Sans KR Variable", ...fontFamily.sans],
-				serif: [...fontFamily.serif],
+				serif: ["Hahmlet Variable", ...fontFamily.serif],
 			},
 			transitionProperty: {
 				height: "height",
