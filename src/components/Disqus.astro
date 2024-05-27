@@ -24,10 +24,18 @@
 					return;
 				}
 
+ 				// Check the theme from localStorage
+  	   	const theme = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
+
 				// Reset DISQUS, Rather than loading new embed.js
 				if (window.DISQUS) {
 					window.DISQUS.reset({
 						reload: true,
+            config: function () {
+                this.page.url = window.location.href; // Ensure the correct page URL
+                this.page.identifier = window.location.pathname; // Ensure the correct page identifier
+                this.theme = theme; // Set the theme
+            }
 					});
 					return;
 				}
@@ -36,7 +44,7 @@
 					// DON'T EDIT BELOW THIS LINE
 					const d = document,
 						s = d.createElement("script");
-					s.src = "[https://tkhwang-me.disqus.com/embed.js]";
+					s.src = "https://tkhwang-me.disqus.com/embed.js";
 					s.setAttribute("data-timestamp", String(+new Date()));
 					(d.head || d.body).appendChild(s);
 				})();
