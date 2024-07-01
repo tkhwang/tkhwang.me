@@ -18,7 +18,7 @@
 		"@astrojs/tailwind": "5.1.0",
 		"@fontsource-variable/hahmlet": "^5.0.13",
 		"@fontsource-variable/noto-sans-kr": "^5.0.6",
-		"astro": "4.8.6",
+		"astro": "4.11.3",
 		"astro-expressive-code": "^0.35.3",
 		"astro-google-analytics": "^1.0.3",
 		"astro-icon": "^1.1.0",
