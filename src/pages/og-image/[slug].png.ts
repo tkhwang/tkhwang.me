@@ -1,7 +1,7 @@
 import type { APIContext, InferGetStaticPropsType } from "astro";
 
-import NotoSansBold from "@/assets/NotoSans-Bold.ttf";
-import NotoSans from "@/assets/NotoSans-Regular.ttf";
+import NotoSansBold from "@/assets/NotoSansKR-Bold.ttf";
+import NotoSans from "@/assets/NotoSansKR-Regular.ttf";
 import { getAllPosts } from "@/data/post";
 import { siteConfig } from "@/site-config";
 import { getFormattedDate } from "@/utils";
@@ -12,18 +12,8 @@ import { html } from "satori-html";
 const ogOptions: SatoriOptions = {
 	// debug: true,
 	fonts: [
-		{
-			data: Buffer.from(NotoSans),
-			name: "NotoSans",
-			style: "normal",
-			weight: 400,
-		},
-		{
-			data: Buffer.from(NotoSansBold),
-			name: "NotoSans",
-			style: "normal",
-			weight: 700,
-		},
+		{ data: Buffer.from(NotoSans), name: "NotoSans", style: "normal", weight: 400 },
+		{ data: Buffer.from(NotoSansBold), name: "NotoSans", style: "normal", weight: 700 },
 	],
 	height: 630,
 	width: 1200,
@@ -63,10 +53,7 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 export async function GET(context: APIContext) {
 	const { pubDate, title } = context.props as Props;
 
-	const postDate = getFormattedDate(pubDate, {
-		month: "long",
-		weekday: "long",
-	});
+	const postDate = getFormattedDate(pubDate, { month: "long", weekday: "long" });
 	const svg = await satori(markup(title, postDate), ogOptions);
 	const png = new Resvg(svg).render().asPng();
 	return new Response(png, {
@@ -83,9 +70,6 @@ export async function getStaticPaths() {
 		.filter(({ data }) => !data.ogImage)
 		.map((post) => ({
 			params: { slug: post.slug },
-			props: {
-				pubDate: post.data.updatedDate ?? post.data.publishDate,
-				title: post.data.title,
-			},
+			props: { pubDate: post.data.updatedDate ?? post.data.publishDate, title: post.data.title },
 		}));
 }
