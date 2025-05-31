@@ -1,7 +1,7 @@
 import type { APIContext, InferGetStaticPropsType } from "astro";
 
-import NotoSansBold from "@/assets/NotoSansKR-Bold.ttf";
-import NotoSans from "@/assets/NotoSansKR-Regular.ttf";
+import NotoSansKRBold from "@/assets/NotoSansKR-Bold.ttf";
+import NotoSansKR from "@/assets/NotoSansKR-Regular.ttf";
 import { getAllPosts } from "@/data/post";
 import { siteConfig } from "@/site-config";
 import { getFormattedDate } from "@/utils";
@@ -12,8 +12,8 @@ import { html } from "satori-html";
 const ogOptions: SatoriOptions = {
 	// debug: true,
 	fonts: [
-		{ data: Buffer.from(NotoSans), name: "NotoSans", style: "normal", weight: 400 },
-		{ data: Buffer.from(NotoSansBold), name: "NotoSans", style: "normal", weight: 700 },
+		{ data: Buffer.from(NotoSansKR), name: "NotoSans", style: "normal", weight: 400 },
+		{ data: Buffer.from(NotoSansKRBold), name: "NotoSans", style: "normal", weight: 700 },
 	],
 	height: 630,
 	width: 1200,
