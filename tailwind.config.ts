@@ -50,7 +50,7 @@ export default {
 			},
 			fontFamily: {
 				// Add any custom fonts here
-				sans: ["Noto Sans KR Variable", ...fontFamily.sans],
+				sans: ["MaruBuri", "Noto Sans KR Variable", ...fontFamily.sans],
 				serif: ["Hahmlet Variable", ...fontFamily.serif],
 			},
 			transitionProperty: {
