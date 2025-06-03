@@ -28,9 +28,9 @@ export default {
 			addComponents({
 				".cactus-link": {
 					"&:hover": {
-						"@apply decoration-link decoration-2": {},
+						"@apply text-link underline decoration-2 underline-offset-4": {},
 					},
-					"@apply underline underline-offset-2": {},
+					"@apply no-underline text-textColor transition-colors duration-200": {},
 				},
 				".title": {
 					"@apply text-2xl font-semibold text-accent-2": {},
