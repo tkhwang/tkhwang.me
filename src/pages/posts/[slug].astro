@@ -3,7 +3,6 @@ import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 
 import PostLayout from "@/layouts/BlogPost.astro";
 import { getAllPosts } from "@/data/post";
-import Disqus from "@/components/Disqus.astro";
 import HyvorTalk from "@/components/HyvorTalk.astro";
 
 export const getStaticPaths = (async () => {
@@ -23,5 +22,4 @@ const { Content } = await entry.render();
 <PostLayout post={entry}>
 	<Content />
 	<HyvorTalk />
-	<!-- <Disqus /> -->
 </PostLayout>
