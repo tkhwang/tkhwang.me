@@ -1,7 +1,7 @@
 ---
 title: "그래, 다시 시작해보자..."
 publishDate: "11 September 2018"
-description: "그래, 이제 다시 시작해보는거야"
+description: "새로운 출발"
 tags: ["talk"]
 ---
 

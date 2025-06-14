@@ -1,7 +1,7 @@
 ---
 title: "나도 글쓰기를 해 볼까 ?"
 publishDate: "26 May 2024"
-description: "그래, 나만을 위한 글쓰기를 한 번 해 보자..."
+description: "독서를 통한 학습을 나만의 생각으로 정리하고 실천하기 위한 글쓰기 시작 선언"
 tags: ["writing"]
 ---
 

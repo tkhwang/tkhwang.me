@@ -1,7 +1,7 @@
 ---
 title: "Max cushion 런닝화와 인생"
 publishDate: "24 May 2025"
-description: "런닝시에 아주 편안하다는 max cushion 런닝화. 평상화로 오래 신었더니 이상하게 불편한 느낌이 있다. 왜일까 ?"
+description: "Max cushion 런닝화의 역설적 불편함에서 찾은 인생 교훈"
 tags: ["life"]
 ---
 
