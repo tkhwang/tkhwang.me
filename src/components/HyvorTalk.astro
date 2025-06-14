@@ -1,9 +1,6 @@
 ---
-// Accept the slug from the parent page
-export interface Props {
-	slug: string;
-}
-const { slug } = Astro.props;
+// [slug].astro
+const { slug } = Astro.params;
 ---
 
 <article>
@@ -11,5 +8,5 @@ const { slug } = Astro.props;
 
 	<!-- Hyvor Talk 댓글 embed -->
 	<script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
-	<hyvor-talk-comments website-id="13474" page-id={slug}></hyvor-talk-comments>
+	<hyvor-talk-comments website-id="13474" page-id=""></hyvor-talk-comments>
 </article>
