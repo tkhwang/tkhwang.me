@@ -10,7 +10,14 @@ type Props = HTMLAttributes<"time"> & {
 
 const { date, dateTimeOptions, ...attrs } = Astro.props;
 
-const postDate = getFormattedDate(date, dateTimeOptions);
+// Default to YYYY-MM-DD format if no dateTimeOptions provided
+const defaultOptions: Intl.DateTimeFormatOptions = {
+	year: "numeric",
+	month: "2-digit",
+	day: "2-digit",
+};
+
+const postDate = getFormattedDate(date, dateTimeOptions || defaultOptions);
 ---
 
 <time datetime={date.toISOString()} {...attrs}>
