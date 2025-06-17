@@ -15,12 +15,15 @@ const { as: Tag = "div", post, withDesc = false } = Astro.props;
 const postDate = getPostSortDate(post);
 ---
 
-<Tag class="grid grid-cols-[120px,1fr] gap-4">
+<Tag class="grid grid-cols-[85px,1fr] gap-2 sm:grid-cols-[110px,1fr] sm:gap-4">
 	<!-- Row 1: Date and Title -->
-	<FormattedDate class="text-right text-gray-600 dark:text-gray-400" date={postDate} />
+	<FormattedDate
+		class="text-right text-sm text-gray-600 dark:text-gray-400 sm:text-base"
+		date={postDate}
+	/>
 	<div>
 		{post.data.draft && <span class="text-red-500">(Draft) </span>}
-		<a class="cactus-link font-bold" data-astro-prefetch href={`/posts/${post.slug}/`}>
+		<a class="cactus-link text-lg font-bold" data-astro-prefetch href={`/posts/${post.slug}/`}>
 			{post.data.title}
 		</a>
 	</div>
@@ -29,7 +32,7 @@ const postDate = getPostSortDate(post);
 	<div class="text-right">
 		{
 			post.data.tags && post.data.tags.length > 0 && (
-				<div class="flex flex-wrap justify-end gap-2">
+				<div class="flex flex-wrap justify-end gap-1 sm:gap-2">
 					{post.data.tags.map((tag: string) => (
 						<a
 							href={`/tags/${tag}`}
