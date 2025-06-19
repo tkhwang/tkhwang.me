@@ -15,7 +15,9 @@ const { as: Tag = "div", post, withDesc = false } = Astro.props;
 const postDate = getPostSortDate(post);
 ---
 
-<Tag class="grid grid-cols-[85px,1fr] gap-2 sm:grid-cols-[110px,1fr] sm:gap-4">
+<Tag
+	class="grid grid-cols-[85px,1fr] gap-x-2 gap-y-1 sm:grid-cols-[110px,1fr] sm:gap-x-4 sm:gap-y-1"
+>
 	<!-- Row 1: Date and Title -->
 	<FormattedDate
 		class="text-right text-sm text-gray-600 dark:text-gray-400 sm:text-base"
