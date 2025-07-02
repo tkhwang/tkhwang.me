@@ -39,10 +39,6 @@ Max Cushion 신발이 나쁜 것은 아니다. 부상 회복 중이거나 특별
 
 런닝화를 고르듯 인생의 선택도 신중해야 한다. 당장 편해 보이는 것보다는, 장기적으로 우리를 더 강하고 건강하게 만들어 줄 것을 선택하는 지혜가 필요하다.
 
-[ps] 요즘 AI 는 글을 아주 잘 쓴다. 작은 아이디어를 가지고, 좋아하는 모건 하우젤과 비슷한 문체로 적어달라는 짧은 요청에 잘 응답해준다.
-
-[ps.2] 앞으로는 진짜 내 글을 적어보자...
-
 ## Reference
 
 - [Are Max Cushioned Shoes Bad For Us?](https://runtothefinish.com/understanding-max-cushioned-shoes/)
