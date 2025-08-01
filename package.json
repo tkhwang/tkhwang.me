@@ -19,7 +19,7 @@
 		"@fontsource-variable/hahmlet": "^5.2.6",
 		"@fontsource-variable/noto-sans-kr": "^5.0.6",
 		"astro": "^5.9.3",
-		"astro-expressive-code": "^0.41.2",
+		"astro-expressive-code": "^0.41.3",
 		"astro-google-analytics": "^1.0.3",
 		"astro-icon": "^1.1.0",
 		"astro-robots-txt": "^1.0.0",
