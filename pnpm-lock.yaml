@@ -27,8 +27,8 @@ importers:
         specifier: ^5.2.6
         version: 5.2.6
       '@fontsource-variable/noto-sans-kr':
-        specifier: ^5.0.6
-        version: 5.2.5
+        specifier: ^5.2.9
+        version: 5.2.9
       astro:
         specifier: ^5.9.3
         version: 5.9.3(@types/node@22.15.29)(jiti@1.21.7)(rollup@4.41.1)(typescript@5.8.3)(yaml@2.8.0)
@@ -486,8 +486,8 @@ packages:
   '@fontsource-variable/hahmlet@5.2.6':
     resolution: {integrity: sha512-3oDzITYqygBavsp0SW5nv34LO7v/vfXe8Y+sdW6A7IOd8yJvw3M1ecwn8SsBQuTk5pWim7zfbpxozB1ZX7UgLA==}
 
-  '@fontsource-variable/noto-sans-kr@5.2.5':
-    resolution: {integrity: sha512-dIJyVPIBRJXtvaFmQ6GKCV93J9Fx3O2Ym5C3gDRcz5zLpEigrnlEfBnsXBUv4aDBHEF/gm/Q07d40dddGxFytg==}
+  '@fontsource-variable/noto-sans-kr@5.2.9':
+    resolution: {integrity: sha512-g1BnJdJbnAgRUP8YxyPIm8npZVUbtt6VgtLnkGR7poa/RVbVGd27i+9138DmwRvtbKhJG1fPLQ/V3BonvFykRQ==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -2090,6 +2090,7 @@ packages:
   eslint-plugin-markdown@5.1.0:
     resolution: {integrity: sha512-SJeyKko1K6GwI0AN6xeCDToXDkfKZfXcexA6B+O2Wr2btUS9GrC+YgwSyVli5DJnctUHjFXcQ2cqTaAmVoLi2A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: Please use @eslint/markdown instead
     peerDependencies:
       eslint: '>=8'
 
@@ -4734,7 +4735,7 @@ snapshots:
 
   '@fontsource-variable/hahmlet@5.2.6': {}
 
-  '@fontsource-variable/noto-sans-kr@5.2.5': {}
+  '@fontsource-variable/noto-sans-kr@5.2.9': {}
 
   '@humanfs/core@0.19.1': {}
 
