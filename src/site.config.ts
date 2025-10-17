@@ -14,8 +14,7 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	// Meta property used as the default description meta property
-	description:
-		"This is my little thoughts 🤔 and journey 💻 into software development | tkhwang.me",
+	description: "소프트웨어 개발 인사이트와 배움을 담는 기술 블로그",
 	// HTML lang property, found in src/layouts/Base.astro L:18
 	lang: "ko-KR",
 	// Meta property, found in src/components/BaseHead.astro L:42
